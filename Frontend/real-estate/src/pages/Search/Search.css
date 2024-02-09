@@ -1,0 +1,54 @@
+.listing__list__div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.listing__list__div p {
+  font-size: 45px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.all-listing-search__firstDiv {
+  padding: 4rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .listing__list__div {
+    padding-top: 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .listing__list__div {
+    padding-top: 5%;
+    gap: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .handle__show__more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .handle__show__more button {
+    width: 70%;
+    height: 2.5rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    background-color: rgb(250, 31, 31);
+    color: white;
+  }
+
+  .all-listing-search__firstDiv {
+    padding: 2rem;
+  }
+}

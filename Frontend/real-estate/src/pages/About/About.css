@@ -1,0 +1,324 @@
+.about__div__image {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../assets/img/LitvakPlace.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: white;
+}
+
+.about__div__image > div {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  opacity: 0.3; /* Adjust the opacity here */
+}
+
+.about__div__image p {
+  font-size: 7rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.about__writeup__div {
+  padding-top: 7rem;
+  padding: 10rem;
+}
+
+.about__writeup__div > p {
+  font-size: 23px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-bottom: 2rem;
+  font-weight: lighter;
+  padding-top: 1rem;
+}
+
+.about__whoisLitvat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.about__litvak__leader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 33px;
+  margin-bottom: 1.5rem;
+  font-weight: bolder;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.youtube__div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__litvak {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../assets/img/litvakimage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  color: white;
+  padding: 5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.content__litvak h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 2rem;
+}
+
+.content__litvak > div {
+  position: relative;
+}
+
+.content__litvak h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.content__litvak p {
+  font-size: 1.2rem;
+}
+
+.content__litvak div:first-child {
+  margin-top: -10%;
+}
+
+.content__litvak div:last-child {
+  margin-bottom: -10%;
+}
+
+.content__litvak > section {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black; /* Adjust the opacity here */
+  opacity: 0.5;
+}
+
+.litvakist__table__about {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.litvakist__table__about > div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0;
+}
+
+.litvakist__table__about div h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.litvakist__table__about span {
+  font-size: 1rem;
+  color: gray;
+}
+
+.litvakist__table__about > p {
+  padding: 2rem;
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: monospace;
+}
+
+.litvakist__table__about a > div {
+  height: 3.5rem;
+  width: 20rem;
+  font-size: 1rem;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+  margin-top: 5rem;
+}
+
+.litvakist__table__about a > div:hover {
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+  .about__div__image {
+    background-position: 50%;
+    height: 60vh;
+  }
+  .about__div__image p {
+    font-size: 5rem;
+  }
+  .about__div__image > div {
+    height: 60vh;
+  }
+  .content__litvak {
+    height: 70vh;
+  }
+
+  .content__litvak > section {
+    height: 70vh;
+  }
+
+  .litvakist__table__about {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+
+  .litvakist__table__about div h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .litvakist__table__about span {
+    font-size: 0.7rem;
+    color: gray;
+  }
+
+  .litvakist__table__about a > div {
+    margin-top: 2rem;
+  }
+
+  .about__writeup__div {
+    padding-top: 5rem;
+    padding: 7rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about__div__image {
+    background-position: none;
+    height: 60vh;
+  }
+  .about__div__image > div {
+    top: 4rem;
+    height: 60vh;
+  }
+  .about__div__image p {
+    font-size: 2.5rem;
+  }
+  .about__writeup__div {
+    padding-top: 2rem;
+    padding: 1.5rem;
+  }
+
+  .about__writeup__div > p {
+    font-size: 20px;
+  }
+
+  .about__whoisLitvat {
+    font-size: 25px;
+    padding: 1rem;
+  }
+
+  .about__litvak__leader {
+    font-size: 22px;
+    padding: 0.3rem;
+  }
+
+  .content__litvak {
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .content__litvak h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .content__litvak > div {
+    position: relative;
+  }
+
+  .content__litvak h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  .content__litvak p {
+    font-size: 1rem;
+  }
+
+  .content__litvak div:first-child {
+    margin-top: 0px;
+  }
+
+  .content__litvak div:last-child {
+    margin-bottom: 0px;
+  }
+
+  .content__litvak > section {
+    height: 100vh;
+  }
+
+  .litvakist__table__about div h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .litvakist__table__about span {
+    font-size: 0.3rem;
+    color: gray;
+  }
+
+  .litvakist__table__about > p {
+    padding: 2rem;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: monospace;
+  }
+
+  .litvakist__table__about a > div {
+    height: 3.5rem;
+    width: 20rem;
+    font-size: 1rem;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    margin-top: 0.8rem;
+  }
+}

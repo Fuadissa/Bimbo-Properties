@@ -1,0 +1,133 @@
+.Table__div {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  height: auto;
+}
+
+.Table__div > h2 {
+  font-size: 18px;
+}
+
+.Table__div__inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.table__property__card {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 15px;
+  padding: 0.7rem;
+  display: flex;
+  padding-bottom: 1rem;
+  flex-direction: column;
+  gap: 0.8rem;
+  overflow-y: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.table__property__card__img > img {
+  width: 100%;
+  height: 15rem;
+  border-radius: 10px;
+}
+
+.table__property__card__title h2 {
+  font-weight: 800;
+}
+
+.table__property__card__title h4 {
+  font-size: 13px;
+  color: rgb(116, 116, 116);
+}
+
+.table__property__card__icon {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.table__property__card__icon > div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0.4rem;
+  border-radius: 10px;
+  height: 1.7rem;
+  color: white;
+  padding: 0.5rem;
+  background-color: rgb(11, 40, 80);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.table__property__card__descrip {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(116, 116, 116);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.handle__show__more__admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.handle__show__more__admin div {
+  width: 25rem;
+  height: 2.5rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  background-color: rgb(179, 60, 13);
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .table__property__card {
+    width: 100%;
+    height: 25rem;
+  }
+  .Table__div__inner {
+    grid-template-columns: 1fr;
+  }
+  .Table__div {
+    padding: 1rem;
+  }
+  .handle__show__more__admin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .handle__show__more__admin div {
+    width: 80%;
+    height: 2.5rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+  }
+}
+/* Tablet */
+@media screen and (max-width: 1200px) {
+  .Table__div__inner {
+    grid-template-columns: 1fr;
+  }
+}

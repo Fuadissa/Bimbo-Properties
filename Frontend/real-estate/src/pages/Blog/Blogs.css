@@ -1,0 +1,190 @@
+.blogs__grid__div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 3rem;
+}
+
+.all-blog__imageCard__about {
+  width: 19rem;
+  height: 25rem;
+  border-radius: 16px;
+  border: 2px solid rgb(145, 139, 139);
+  background-color: white;
+  box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.18);
+}
+
+.all-blog__imageCard__about:hover,
+.all-blog__imageCard__about:focus {
+  box-shadow: none;
+}
+
+.all-blog__imageCard__about img {
+  width: 100%;
+  height: 15rem;
+  margin-bottom: 0.2rem;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.all-blog__imageCard__about > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.all-blog__innerCard__div__h2Div {
+  font-size: 17px;
+  background-color: green;
+  color: white;
+  margin-top: 0.5rem;
+  height: 2rem;
+  border-radius: 9px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-blog__innerCard__div__h2Div h2 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+}
+
+.all-blog__card__descrip {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.all-blog__innerCard__div {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.all-blog__imageCard__about__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+.all-blog__icons div {
+  font-size: 20px;
+}
+
+.all-blog__icons div:first-child {
+  color: rgb(18, 51, 97);
+}
+
+.all-blog__icons div:last-child {
+  color: rgb(238, 50, 50);
+}
+
+.our__blog__div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  padding: 1rem;
+}
+
+/* backgroung__image */
+.blog__div__image {
+  height: 97vh;
+  width: 100%;
+  background-image: url("../../assets/img/LitvakPlace.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: white;
+}
+
+.blog__div__image > div {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  opacity: 0.3; /* Adjust the opacity here */
+  height: 97vh;
+}
+
+.blog__div__image p {
+  font-size: 7rem;
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* Tablet */
+@media screen and (max-width: 1200px) {
+  .all-blog__imageCard__about {
+    width: 100%;
+    border: 1px solid rgb(167, 166, 255);
+  }
+
+  .blogs__grid__div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  .all-blog__innerCard__div__h2Div h2 {
+    width: 15rem;
+  }
+
+  .all-blog__imageCard__about__grid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+  .blog__div__image {
+    height: 50vh;
+  }
+
+  .blog__div__image > div {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .all-blog__imageCard__about {
+    height: 28rem;
+  }
+
+  .all-blog__imageCard__about img {
+    height: 18rem;
+  }
+  .all-blog__imageCard__about__grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .blogs__grid__div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .blog__div__image {
+    height: 50vh;
+    background-position: 50%;
+  }
+
+  .blog__div__image > div {
+    height: 50vh;
+    margin-top: 4rem;
+  }
+
+  .blog__div__image p {
+    font-size: 3rem;
+  }
+}
