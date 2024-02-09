@@ -427,7 +427,7 @@
     padding: 0px;
     margin-top: 0;
     height: 4rem;
-    background-color: rgba(11, 40, 80);
+    background-color: #0b2850;
     box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.18);
     backdrop-filter: blur(15px);
     --webkit-backdrop-filter: blur(15px);

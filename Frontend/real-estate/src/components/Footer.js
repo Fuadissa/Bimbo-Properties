@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-[#00ff6a]">
+    <div className="bg-[#0b2850]">
       <footer className="section__container footer__container">
         <div className="footer__col">
           <Link to="/">
