@@ -219,7 +219,7 @@ const AddListing = () => {
             <div>
               <h3>Property Price</h3>
               <input
-                placeholder="$20,0000,000"
+                placeholder=" ₦20,0000,000"
                 type="number"
                 value={formData.regularPrice}
                 onChange={handleChange}
@@ -272,9 +272,9 @@ const AddListing = () => {
 
           {formData?.status === "rent" ? (
             <div>
-              <h3>Regular Price $ / month</h3>
+              <h3>Regular Price  ₦ / month</h3>
               <input
-                placeholder="$20,000"
+                placeholder=" ₦20,000"
                 type="number"
                 name="monthlyPrice"
                 value={formData.monthlyPrice}

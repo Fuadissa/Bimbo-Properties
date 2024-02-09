@@ -185,7 +185,7 @@ const AllListing = () => {
               <img src={product.imageUrls[1]} alt="" />
               <div>
                 <h2 className="all-listing__header2">
-                  $
+                  ₦
                   {product?.regularPrice
                     ? product?.regularPrice.toLocaleString()
                     : `${product?.monthlyPrice.toLocaleString()} /per month`}

@@ -20,7 +20,7 @@ const Cards = ({
         boxShadow: "0px 10px 20px 0px #e0c6f5",
       },
       barValue: 100,
-      value: `$${totalListingForLastSixMonth.toLocaleString()}`,
+      value: `₦${totalListingForLastSixMonth.toLocaleString()}`,
       png: BsHouse,
       series: [
         {
@@ -38,7 +38,7 @@ const Cards = ({
       barValue: Math.round(
         (totalBoughtListingForLastSixMonth / totalListingForLastSixMonth) * 100
       ),
-      value: `$${totalBoughtListingForLastSixMonth.toLocaleString()}`,
+      value: `₦${totalBoughtListingForLastSixMonth.toLocaleString()}`,
       png: GiTakeMyMoney,
       series: [
         {
@@ -57,7 +57,7 @@ const Cards = ({
       barValue: Math.round(
         (totalRentedListingForLastSixMonth / totalListingForLastSixMonth) * 100
       ),
-      value: `$${totalRentedListingForLastSixMonth.toLocaleString()}`,
+      value: `₦${totalRentedListingForLastSixMonth.toLocaleString()}`,
       png: BsClipboard2Data,
       series: [
         {

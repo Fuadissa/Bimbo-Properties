@@ -23,7 +23,7 @@ const Table = ({ adminListing, loading }) => {
               </div>
               <div className="table__property__card__title">
                 <h2>
-                  $
+                  ₦
                   {listing?.regularPrice
                     ? listing?.regularPrice?.toLocaleString()
                     : `${listing?.monthlyPrice?.toLocaleString()} /per month`}

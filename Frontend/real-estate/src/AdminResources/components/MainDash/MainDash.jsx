@@ -28,7 +28,6 @@ const MainDash = () => {
     const fetchData = async () => {
       setLoading(true);
       const { data } = await axios.get("/api/listing/admindata");
-
       const totalListingForLastSixMonth = data.reduce(
         (accumulator, currentValue) => {
           return accumulator + currentValue.total;

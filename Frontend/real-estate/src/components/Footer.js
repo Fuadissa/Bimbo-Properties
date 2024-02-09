@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  RiCompass4Line,
-  RiFacebookFill,
-  RiInstagramFill,
-  RiTwitterFill,
-  RiWhatsappFill,
-} from "react-icons/ri";
+import { RiInstagramFill, RiWhatsappFill } from "react-icons/ri";
 import Logo from "../assets/img/bimboLogo.png";
 import { Link } from "react-router-dom";
 
